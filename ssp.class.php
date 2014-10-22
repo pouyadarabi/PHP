@@ -1,6 +1,5 @@
 <?php
 
-use Doctrine\ORM\Query\AST\WhenClause;
 /*
  * Helper functions for building a DataTables server-side processing SQL query
  *
