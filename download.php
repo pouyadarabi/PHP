@@ -122,8 +122,7 @@ function downloadFile($fileLocation, $fileName, $maxSpeed = 13, $doStream = fals
     if ($size == 0) {
         die('Zero byte file! Aborting download');
     }   
-    if(get_magic_quotes_runtime())
-    {
+    if(get_magic_quotes_runtime()){
       set_magic_quotes_runtime(0);
     }
     $fp = fopen("$fileLocation", "rb");
@@ -145,4 +144,3 @@ function downloadFile($fileLocation, $fileName, $maxSpeed = 13, $doStream = fals
 /* Implementation */
 
 downloadFile('file/', 'test.zip', 900, false); 
-
