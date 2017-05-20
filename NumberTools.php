@@ -16,7 +16,7 @@ class NumberTools {
 			'۶',
 			'۷',
 			'۸',
-			'۹' 
+			'۹',
 	);
 	private static $arabic_digits = array (
 			'٠',
@@ -28,7 +28,7 @@ class NumberTools {
 			'٦',
 			'٧',
 			'٨',
-			'٩' 
+			'٩',
 	);
 	private static $english_digits = array (
 			'0',
@@ -40,7 +40,7 @@ class NumberTools {
 			'6',
 			'7',
 			'8',
-			'9' 
+			'9',
 	);
 	public static function arabicPersionToEnglish($str) {
 		$str = str_replace ( self::$persian_digits, self::$english_digits, $str );	
